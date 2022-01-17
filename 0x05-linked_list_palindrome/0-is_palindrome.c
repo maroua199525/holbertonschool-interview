@@ -26,8 +26,8 @@ int is_palindrome(listint_t **head)
 	length = i - 1;
 	for (j = 0; j < (length / 2); j++)
 	{
-		if (array[j] == array[length - j])
-			return (1);
+		if (array[j] != array[length - j])
+			return (0);
 	}
-	return (0);
+	return (1);
 }
