@@ -2,7 +2,7 @@
 #define LISTS_H
 
 /**##### MACROS ######*/
-#define MAX 1024
+#define MAX 6000
 
 /**###### LIBS USED ######*/
 #include <stdio.h>
