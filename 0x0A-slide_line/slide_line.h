@@ -2,8 +2,8 @@
 #define SLIDE_LINE
 
 /**##### MACROS ######*/
-#define SLIDE_LEFT 1
-#define SLIDE_RIGHT 0
+#define SLIDE_LEFT 0
+#define SLIDE_RIGHT 1
 
 /**###### LIBS USED ######*/
 #include <stdlib.h>
