@@ -20,7 +20,7 @@ def rain(walls):
     if len(walls) == 0:
         return 0
     for i in range(1, len(walls) - 1):
-        left= max(walls[:i])
+        left = max(walls[:i])
         right = max(walls[i + 1:])
         min_square = min(left, right)
         if walls[i] < min_square:
