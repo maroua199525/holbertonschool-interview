@@ -18,7 +18,7 @@ def rain(walls):
     square = 0
     if walls is None:
         return 0
-    if len(walls) == 0:
+    if  walls == []:
         return 0
     for i in range(len(walls)):
         if walls[i] != 0:
