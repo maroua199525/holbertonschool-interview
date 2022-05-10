@@ -15,22 +15,14 @@ def rain(walls):
     """
 
     water = 0
-    square = 0
     if walls is None:
         return 0
-    if  walls == []:
+    if len(walls) == 0:
         return 0
-    for i in range(len(walls)):
-        if walls[i] != 0:
-            break
-    for j in range(i + 1, len(walls)):
-        if walls[j] == 0:
-            square = square + 1
-        else:
-            if walls[j] < walls[i]:
-                water += walls[j] * square
-            else:
-                water += walls[i] * square
-            i = j
-            square = 0
+    for i in range(1, len(walls) - 1):
+        left= max(walls[:i])
+        right = max(walls[i + 1:])
+        min_square = min(left, right)
+        if walls[i] < min_square:
+            water += min_square - walls[i]
     return water
