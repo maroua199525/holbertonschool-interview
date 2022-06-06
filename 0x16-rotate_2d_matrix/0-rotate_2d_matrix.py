@@ -7,7 +7,7 @@ def rotate_2d_matrix(matrix):
     """a function that rotate a matrix 2D 90 degrees clockwise"""
 
     n = len(matrix)
-    for i in range(0, (n // 2)):
+    for i in range(0, n):
         for j in range(i, n - i - 1):
             tmp = matrix[i][j]
             matrix[i][j] = matrix[j][n - 1 - i]
