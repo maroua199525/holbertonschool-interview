@@ -49,6 +49,7 @@ void multiply_integer(char *a, char *b)
 	ptr = malloc(sizeof(int) * total);
 	if (!ptr)
 		return;
+
 	for (length_1--; length_1 >= 0; length_1--)
 	{
 		digit_2 = a[length_1] - '0';
@@ -89,6 +90,11 @@ int main(int argc, char *argv[])
 	{
 		printf("Error\n");
 		exit(98);
+	}
+	if (*argv[1] == '0' || *argv[2] == '0')
+	{
+		printf("0\n");
+		return (0);
 	}
 	multiply_integer(num1, num2);
 	return (0);
