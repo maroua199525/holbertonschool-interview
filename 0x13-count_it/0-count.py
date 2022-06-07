@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+""" a recursive function that queries the hot Reddit API """
+
 import requests
 """
 a recursive function that queries the Reddit API,
