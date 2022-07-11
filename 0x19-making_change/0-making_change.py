@@ -13,6 +13,8 @@ def makeChange(coins, total):
         i = 0
         coins.sort(reverse=True)
         len_1 = len(coins)
+        if len_1 == 0:
+            count = -1
         while(i < len_1):
             div = (total // coins[i])
             rest = (total % coins[i])
