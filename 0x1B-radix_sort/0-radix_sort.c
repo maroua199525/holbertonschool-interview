@@ -62,12 +62,15 @@ void count(int *array, int size, int digit)
  */
 void radix_sort(int *array, size_t size)
 {
-	int i;
+	int max, digit;
 
-	for (i = 1; i < 100; i *= 10)
+	if (!array || size <= 1)
+		return;
+
+	max = max_array(array, size);
+	for (digit = 1; max / digit > 0; digit *= 10)
 	{
-		count(array, size, i);
+		count(array, size, digit);
 		print_array(array, size);
 	}
 }
-
