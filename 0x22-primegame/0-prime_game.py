@@ -87,3 +87,6 @@ def isWinner(x: int, nums: list):
         return "Ben"
     return "Maria"
 
+
+if __name__ == "__main__":
+    isWinner(3, [4, 5, 1])
