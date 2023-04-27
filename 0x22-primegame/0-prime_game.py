@@ -87,6 +87,3 @@ def isWinner(x, nums):
         return "Ben"
     return "Maria"
 
-
-if __name__ == "__main__":
-    isWinner(3, [4, 5, 1])
