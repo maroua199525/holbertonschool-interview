@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """Prime Game
 Maria and Ben are playing a game. Given a set of consecutive integers starting
- 1 up to and including n, they take turns choosing a prime number  the
-set and removing that number and its multiples  the set. The player that
+1 up to and including n, they take turns choosing a prime number the
+set and removing that number and its multiples the set. The player that
 cannot make a move loses the game.
 """
 
@@ -18,7 +18,7 @@ def print_numbers(numbers):
         """print("{}".format(numbers[x]), end="")"""
 
 
-def isWinner(x, nums):
+def isWinner(x: int, nums: list):
     """Prime Game
     args:
         x: number of rounds
