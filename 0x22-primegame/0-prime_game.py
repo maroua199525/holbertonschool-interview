@@ -18,7 +18,7 @@ def print_numbers(numbers):
         """print("{}".format(numbers[x]), end="")"""
 
 
-def isWinner(x: int, nums: list):
+def isWinner(x, nums):
     """Prime Game
     args:
         x: number of rounds
