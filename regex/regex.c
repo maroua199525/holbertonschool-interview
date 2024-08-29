@@ -9,6 +9,11 @@
 */
 int regex_match(char const *str, char const *pattern)
 {
+	if (*str == '\0' && *pattern == '\0')
+		return (1);
+
+	if (*str != '\0' && *pattern == '\0')
+		return (0);
 	int i = 0, rv = 0;
 
 	do
@@ -31,11 +36,9 @@ int regex_match(char const *str, char const *pattern)
 int regex_match_rec(char const *str, char const *pattern)
 {
 	int a1 = 0;
-    if (*str == '\0' && *pattern == '\0')
-	    return (1);
 
-    if (*str != '\0' && *pattern == '\0')
-		return (0);
+	if (!str[0])
+		return (1);
 	if (pattern[0] == '.')
 		return (1 * regex_match(str + 1, pattern + 1));
 	if (pattern[0] == '*')
